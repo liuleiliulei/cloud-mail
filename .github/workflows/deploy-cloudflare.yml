@@ -41,9 +41,7 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: "24"
-          cache: "pnpm"
-          cache-dependency-path: "./mail-worker/pnpm-lock.yaml"
-
+          
       - name: ⚙ 启用 Corepack / Enable Corepack
         run: corepack enable
 
